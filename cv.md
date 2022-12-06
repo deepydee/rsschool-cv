@@ -2,6 +2,10 @@
 ### Junior Frontend Developer
 
 ---
+
+<img src="images/photo.JPG" alt="drawing" width="200" heigh="200">
+
+---
 ###  Contact informantion:
 **Phone**: +7 (747)109-26-43\
 **E-mail**: semenov.vi@mail.kz\
