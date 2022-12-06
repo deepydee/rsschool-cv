@@ -45,6 +45,7 @@ function check_user () { // checking user's auth
 ***
 ###  Languages
 * English - Intermediate/Upper-intermediate (according to the online test at [EFset](https://www.efset.org/cert/JofwVo))
+![Сертификат EF-Set](https://deepydee.github.io/rsschool-cv/images/efset-cert.png)
 * Russian - Native
 * Spanish - Basic
 * Italian - Basic
