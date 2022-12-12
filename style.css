@@ -3,7 +3,7 @@
 :root {
   --main-bg-color: #e7e6eb;
   --header-color: #000000;
-  --text-color: #848486;
+  --text-color: #606060;
 }
 
 /* Custom fonts */
@@ -16,7 +16,7 @@
 @font-face {
   font-family: 'Steelfish';
   src: local(''),
-       url("assets/fonts/steelfish-bg.woff2");
+       url("assets/fonts/steelfish-bd.woff2");
   font-weight: 700;
 }
 @font-face {
@@ -58,7 +58,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-width: 320px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0;
   padding: 0;
   font-family: 'Raleway', 'Arial', sans-serif;
@@ -73,6 +73,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   min-height: 50px;
+  padding: 0 20px;
 }
 
 /* Header menu */
@@ -122,14 +123,62 @@ body {
   }
 }
 
-/* Main block */
-.main {
-  margin: 0;
-  border: 1px solid red;
+/* Main container */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Footer */
-.footer {
-  margin: 0;
-  border: 1px solid red;
+.section-profile {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 50px 30px 35px;
+}
+
+.section-profile-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.section-profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.main-title {
+  position: relative;
+  padding: 0;
+  margin-bottom: 20px;
+  font-family: 'Steelfish', Arial, serif;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 51px;
+  letter-spacing: 10px;
+  color: var(--header-color);
+}
+
+.sirname {
+  position: relative;
+  top: 25%;
+  font-weight: 400;
+  font-size: 102px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  position: relative;
+  right: 18px;
+  font-family: 'Raleway', Arial, serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0;
+  text-transform: uppercase;
+  color: var(--text-color);
 }
