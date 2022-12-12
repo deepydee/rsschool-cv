@@ -1,6 +1,30 @@
-html, body {
-    font-family: Arial, serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'Steelfish';
+    src: url("assets/fonts/steelfish-rg.woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Steelfish';
+    src: url("assets/fonts/steelfish-bg.woff2");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("assets/fonts/raleway-regular.woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("assets/fonts/raleway-700.woff2");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("assets/fonts/raleway-800.woff2");
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url("assets/fonts/raleway-900.woff2");
+    font-weight: 900;
 }
