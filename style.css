@@ -91,7 +91,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 50px;
-  color: var(--header-color);
+  color: var(--text-color);
 }
 
 .nav-link::after {
@@ -102,7 +102,7 @@ body {
   width: calc(100% - 24px);
   /* width: 100%; */
   height: 2px;
-  background-color: var(--header-color);
+  background-color: var(--text-color);
   opacity: 0;
   transition: .5s;
 }
@@ -132,14 +132,15 @@ body {
 
 .section-profile {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   width: 100%;
   padding: 50px 30px 35px;
 }
 
 .section-profile-logo {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
+  margin-right: 30px;
   object-fit: cover;
   border-radius: 50%;
   filter: grayscale(100%);
@@ -181,4 +182,131 @@ body {
   line-height: 0;
   text-transform: uppercase;
   color: var(--text-color);
+}
+
+.section {
+  padding: 10px;
+  padding-bottom: 35px;
+}
+
+.section-1-3 {
+  width: 33%;
+}
+
+.section-1-2 {
+  width: 50%;
+}
+
+.section-2-3 {
+  width: 66%;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+
+.section-list {
+  padding: 0;
+  list-style: none;
+}
+
+.section-item {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.section-item::before {
+  content: "+";
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 14px;
+  height: 14px; 
+  background-size: 14px 14px;
+}
+
+.section-item span {
+  color: #829985;
+}
+
+.section-item a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: var(--text-color);
+  transition: color 0.5s;
+}
+
+.section-item a:hover {
+  color: var(--header-color);
+}
+
+.contacts-item:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 24px;
+  height: 24px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contacts-item:nth-child(1):before {
+  background-image: url("assets/svg/location.svg");
+}
+
+.contacts-item:nth-child(2):before {
+  top: 4px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  background-image: url("assets/svg/email.svg");
+}
+
+.contacts-item:nth-child(3):before {
+  top: 4px;
+  left: 0px;
+  width: 19px;
+  height: 19px;
+  background-image: url("assets/svg/github.svg");
+}
+
+.contacts-item:nth-child(4):before {
+  top: 3px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  background-image: url("assets/svg/telegram.svg");
+}
+
+.contacts-item:nth-child(5):before {
+  background-image: url("assets/svg/discord.svg");
+}
+
+.summary-wrapper {
+  padding-left: 40px;
+  border-left: 5px solid #000;
+}
+
+.bd-left {
+  padding-left: 40px;
+  border-left: 2px solid #000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
