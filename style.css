@@ -1,30 +1,59 @@
 @font-face {
-    font-family: 'Steelfish';
-    src: url("assets/fonts/steelfish-rg.woff2");
-    font-weight: 400;
+  font-family: 'Steelfish';
+  src: local(''),
+       url("assets/fonts/steelfish-rg.woff2");
+  font-weight: 400;
 }
 @font-face {
-    font-family: 'Steelfish';
-    src: url("assets/fonts/steelfish-bg.woff2");
-    font-weight: 700;
+  font-family: 'Steelfish';
+  src: local(''),
+       url("assets/fonts/steelfish-bg.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local(''), 
+       url("assets/fonts/raleway-regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local(''),
+       url("assets/fonts/raleway-700.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local(''),
+       url("assets/fonts/raleway-800.woff2");
+  font-weight: 800;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url("assets/fonts/raleway-regular.woff2");
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url("assets/fonts/raleway-700.woff2");
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url("assets/fonts/raleway-800.woff2");
-    font-weight: 800;
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url("assets/fonts/raleway-900.woff2");
+    src: local(''),
+         url("assets/fonts/raleway-900.woff2");
     font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4a494d;
 }
