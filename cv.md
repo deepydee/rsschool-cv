@@ -3,7 +3,7 @@
 
 ---
 
-<img src="images/photo.JPG" alt="drawing" width="200" heigh="200">
+<img src="asets/img/avatar.jpg" alt="Vitalii Semenov photo" width="200" heigh="200">
 
 ---
 ###  Contact informantion:
