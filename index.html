@@ -57,7 +57,7 @@
             <li class="section-item contacts-item">Email: <a href="mailto:semenov.vi@mail.kz">semenov.vi@mail.kz</a></li>
             <li class="section-item contacts-item">Github: <a href="https://github.com/deepydee" target="_blank">deepydee</a></li>
             <li class="section-item contacts-item">Telegram: <a href="https://t.me/deepy_dee" target="_blank">@deepy_dee</a></li>
-            <li class="section-item contacts-item">Discord: <a href="#">#</a></li>
+            <li class="section-item contacts-item">Discord: <a href="https://discord.com/users/Vitalii%20Semenov#7763">Vitalii Semenov#7763</a></li>
           </ul>
         </div>
       </section>
@@ -120,11 +120,11 @@ require_once("connect.php");
 
 // checking user's auth
 function check_user () {
-    if (!isset($_SESSION['my_inside'])) {
-      return false;
-    } else {
-      return $_SESSION['current_user'];
-    }
+  if (!isset($_SESSION['my_inside'])) {
+    return false;
+  } else {
+    return $_SESSION['current_user'];
+  }
 }</code></pre>
         </div>
       </section>
